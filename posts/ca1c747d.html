@@ -29,7 +29,7 @@
 
     <script src="/bluetea/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"><link rel="stylesheet" href="/bluetea/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -459,6 +459,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/bluetea/libs/prism/prism.css">
+        
 
         
 
@@ -466,9 +469,21 @@
             <div id="articleContent">
                 <p>第一篇文章记录如何使用hexo和github来创建个人博客。网上关于这种教程非常多，写的也非常的详细，本文不会比这些教程详细，仅仅是为了记录在整个搭建过程。</p>
 <h2 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h2><p>安装好 <a target="_blank" rel="noopener" href="https://nodejs.org/en/download">node.js</a>, <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">git</a>。</p>
-<h2 id="创建Git仓库"><a href="#创建Git仓库" class="headerlink" title="创建Git仓库"></a>创建Git仓库</h2><p>Git仓库目的是托管hexo生成的静态文件。</p>
+<h2 id="创建Git仓库"><a href="#创建Git仓库" class="headerlink" title="创建Git仓库"></a>创建Git仓库</h2><p>创建Git仓库，点击到setting，进行如下配置。Git仓库目的是托管hexo生成的静态文件。<br><img src="/bluetea/posts/ca1c747d/2.png"></p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在电脑上创建一个文件夹用于存放博客文件，例如我新建了bluetea的文件夹。<br><img src="/bluetea/posts/ca1c747d/1.png"></p>
+<p>打开终端控制界面，输入命令安装 Hexo：</p>
+<pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="/bluetea/posts/ca1c747d/3.png"><br>安装完成后，执行命令初始化博客：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo init   <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在部署前，需要执行命令生成静态文件：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>本地部署，预览：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<h2 id="换主题"><a href="#换主题" class="headerlink" title="换主题"></a>换主题</h2><p>选择自己喜欢的主题，例如<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">matery主题</a>，点击下载zip文件，将下载好的文件拷贝到博客的theme文件夹，解压命名为matery。<br><img src="/bluetea/posts/ca1c747d/4.png"></p>
+<p>然后再找到并打开博客的配置文件_config.yml，搜到到关键字 theme，将其修改为 matery，重新部署即生效。</p>
+<h2 id="部署到Github仓库"><a href="#部署到Github仓库" class="headerlink" title="部署到Github仓库"></a>部署到Github仓库</h2><p>执行命令：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
                 
             </div>
             <hr/>
