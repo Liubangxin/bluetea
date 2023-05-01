@@ -436,6 +436,15 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/bluetea/categories/Hexo/" class="post-category">
+                                Hexo
+                            </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -498,7 +507,16 @@
 <p>执行命令：</p>
 <pre class="line-numbers language-none"><code class="language-none">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-
+<h2 id="创建Categories页"><a href="#创建Categories页" class="headerlink" title="创建Categories页"></a>创建Categories页</h2><p>在命令行中进入source目录，执行命令：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo new page &quot;categories&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>执行完成后，会生成一个文件 source&#x2F;categories&#x2F;index.md。编辑文件内容：</p>
+<pre class="line-numbers language-none"><code class="language-none">---
+title: categories
+date: 2023-05-01 08:30:33
+type: &quot;categories&quot; 
+layout: &quot;categories&quot; 
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>创建了目录后如何使用呢，答案是只需要在文章的基本信息中添加category即可，例如：<br><img src="/bluetea/posts/ca1c747d/6.png"></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>到此为止，个人博客的搭建完成，当然在整个过程中也遇到了一些小问题。</p>
 <ol>
 <li>点击每一篇博客都跳转错误，跳转到了第一篇文章。</li>
@@ -738,18 +756,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/bluetea/posts/ca1c747d.html">
+                <a href="/bluetea/posts/dc367eb1.html">
                     <div class="card-image">
                         
                         
-                        <img src="/bluetea/medias/featureimages/20.jpg" class="responsive-img" alt="记录使用hexo和github创建个人博客">
+                        <img src="/bluetea/medias/featureimages/19.jpg" class="responsive-img" alt="求最大公约数">
                         
-                        <span class="card-title">记录使用hexo和github创建个人博客</span>
+                        <span class="card-title">求最大公约数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -759,18 +776,21 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-27
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-01
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Blue Tea
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/bluetea/categories/leetcode/" class="post-category">
+                                    leetcode
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
